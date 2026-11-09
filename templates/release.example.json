@@ -1,0 +1,36 @@
+{
+  "id": "REPLACE_WITH_ACCEPTED_RELEASE",
+  "evaluator_repository": "https://github.com/RLWRLD/DexBench",
+  "code_commit": "0000000000000000000000000000000000000000",
+  "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "evaluator_image_digest": "registry.example.org/evaluator@sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "models": [
+    "gr00t"
+  ],
+  "tasks": {
+    "m1": {
+      "frozen_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "reference_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "cells": {
+        "train": {
+          "v1": 60,
+          "v1-plus": 120
+        },
+        "ga_s": {
+          "v1": 60,
+          "v1-plus": 120
+        }
+      },
+      "evaluation_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  "eval_versions": [
+    "v1"
+  ],
+  "datasets": [
+    {
+      "uri": "https://huggingface.co/datasets/RLWRLD/DexBench-datasets",
+      "revision": "0000000000000000000000000000000000000000"
+    }
+  ]
+}

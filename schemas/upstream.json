@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/RLWRLD/DexBench-Arena",
+  "commit": "7011287cf91252784328afbd04cbf6329f7ca3dc",
+  "path": "source/dexbench_arena/dexbench_arena/benchmark/submission.schema.json",
+  "sha256": "cf41a7eb60740e0817492cbd00888dc090ff56fb7526e571e1012db206f8600d",
+  "model_entry": {
+    "path": "source/dexbench_arena/dexbench_arena/benchmark/model_entry.schema.json",
+    "sha256": "ac71e70d54c1a345b84ec7958ba7072e0cccd3df9184c52b4a647415e2ac224f"
+  }
+}

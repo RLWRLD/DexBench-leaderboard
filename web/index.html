@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DexBench · Policy leaderboard</title>
+  <meta name="description" content="Reviewed robot policy evaluations with complete rollout evidence.">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header><a class="wordmark" href="https://github.com/RLWRLD/DexBench-leaderboard">DEXBENCH <span>/ LEADERBOARD</span></a>
+    <a class="button" href="https://github.com/RLWRLD/DexBench-leaderboard#submit-a-result">Submit a result ↗</a></header>
+  <main>
+    <section class="intro"><p class="eyebrow">ROBOT POLICY EVALUATION</p><h1>Results you can inspect.</h1>
+      <p class="lede">Standard-data generalist policies, with one checkpoint across tasks. Compare reviewed results within the same release and protocol.</p>
+      <div class="stats" id="stats" aria-live="polite"></div>
+    </section>
+    <section class="controls" aria-label="Filter results">
+      <label>Release<select id="release"></select></label><label>Protocol<select id="eval_version"></select></label>
+      <label>Score<select id="metric"></select></label>
+      <label class="search">Find a model or team<input id="search" type="search" placeholder="Model or team name"></label>
+      <button id="sort" class="button" type="button" aria-label="Reverse score sorting">Score ↓</button>
+    </section>
+    <div id="results" aria-live="polite"></div>
+    <section class="notes"><h2>How to read these results</h2><div class="note-grid">
+      <div><h3>Reported</h3><p>Maintainers reviewed the submission and its evidence. Scores come from the submitter's run.</p></div>
+      <div><h3>Coverage matters</h3><p>Overall is the unweighted mean across the accepted task suite. Every accepted submission completes all release tasks, cells and rows.</p></div>
+    </div></section>
+  </main>
+  <footer><span>Accepted records are maintained through pull requests.</span><nav>
+    <a href="leaderboard.json">Download JSON</a><a href="https://github.com/RLWRLD/DexBench-leaderboard">Repository & submission guide ↗</a>
+  </nav></footer>
+  <script id="board-data" type="application/json">__LEADERBOARD_DATA__</script>
+</body>
+</html>

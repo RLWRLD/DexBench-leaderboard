@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "team": "Replace with team name",
+  "artifact_bundle": {
+    "url": "https://example.org/replace-with-immutable-bundle",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}

@@ -1,0 +1,5 @@
+DexBench leaderboard
+Copyright 2026 RLWRLD Inc.
+
+Submission schema and method-card template originate from RLWRLD/DexBench-Arena,
+Apache-2.0; the schema source revision and SHA-256 are recorded in schemas/upstream.json.

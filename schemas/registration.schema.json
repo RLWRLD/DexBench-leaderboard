@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "group": {
+      "const": "registered"
+    },
+    "model_entry": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string"
+        },
+        "group": {
+          "const": "community"
+        },
+        "policy": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "policy_variant": {
+              "type": "string"
+            },
+            "action_chunk_length": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "type"
+          ]
+        }
+      },
+      "required": [
+        "key",
+        "label",
+        "policy"
+      ],
+      "additionalProperties": false
+    },
+    "checkpoint_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "checkpoint_label": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "group",
+    "model_entry",
+    "checkpoint_sha256",
+    "checkpoint_label"
+  ],
+  "additionalProperties": false
+}
